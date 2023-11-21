@@ -14,7 +14,7 @@ RUN apk --update add --virtual build-dependencies ruby-bundler ruby-dev  \
 
 ADD haproxy.cfg.erb /usr/local/etc/haproxy.cfg.erb
 ADD privoxy.cfg.erb /usr/local/etc/privoxy.cfg.erb
-ADD privoxy.cfg.erb /usr/local/etc/torrc
+ADD torrc /usr/local/etc/torrc
 
 ADD start.rb /usr/local/bin/start.rb
 RUN chmod +x /usr/local/bin/start.rb
